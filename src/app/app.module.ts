@@ -4,11 +4,6 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-
-
-
 @NgModule({
   declarations: [
     AppComponent
@@ -18,14 +13,9 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
     BrowserAnimationsModule,
     MatTabsModule,
     FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
+    ReactiveFormsModule
   ],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
-  providers: [SearchService]
+  providers: [],
+  bootstrap: [AppComponent]
 })
-
-export class AppModule {}
-
-platformBrowserDynamic().bootstrapModule(AppModule);
+export class AppModule { }
